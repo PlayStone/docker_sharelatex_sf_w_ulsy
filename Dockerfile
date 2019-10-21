@@ -1,7 +1,6 @@
 FROM playst0ne/sharelatex-scheme-full
 
-RUN export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2019/bin/x86_64-linux/ \
-    && cd ~ \
+RUN cd ~ \
     && wget http://mirrors.ctan.org/fonts/ulsy.zip \
     && unzip ulsy.zip && rm ulsy.zip\
     && cd ulsy \
